@@ -1,0 +1,150 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="css/bulma/css/bulma-rtl.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:765px)">
+    <title>Kay Koyo |   Accueil</title>
+</head>
+<body>
+     <!-- NAVBAR -->
+     <nav class="navbar is-transparent is-fixed-top" style="box-shadow: 0 0 10px;">
+        <div class="navbar-brand">
+          <a  href="index.html">
+            <img class="logo" src="img/logo/kay-koyo.png" alt="logo" width="250" style="margin-left: 20px; margin-right: 20PX;" >
+          </a>
+          <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              ACCUEIL
+            </a>
+            <a class="navbar-item" href="apropos.html">
+              A PROPOS
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="assistant.html">
+                ASSISTANT
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="assistant.html">
+                  Assistant en matière de chiffre
+                </a>
+                <a class="navbar-item" href="assistant.html">
+                  Assistant en matière de lettre
+                </a>
+                <a class="navbar-item" href="assistant.html">
+                  Assistant en matière connaissance générale
+                </a>
+                <a class="navbar-item" href="devoir.html">
+                  Assistant humain pour vos devoir
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="devoir.html">
+                  Assistance par humain
+                </a>
+                <a class="navbar-item is-active" href="devoir.html">
+                  Aide pour vos devoir par un assistant humain
+                </a>
+              </div>
+            </div>
+            <a class="navbar-item" href="forum.html">
+              FORUM
+            </a>
+            <a class="navbar-item" href="rv.html">
+              VISITE VIRTUELLE
+            </a>
+            <a class="navbar-item" href="autreservice.html">
+              AUTRES SERVICES
+            </a>
+            <a class="navbar-item" href="contact.html">
+             CONTACT
+            </a>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="button " href="connexion.html">
+
+                    <span>Connexion</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="button is-dark" href="inscription.html">
+                    <span>S'INSCRIRE</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END OF NAVBAR -->
+
+      <!-- ASSISTANCE FOR HOMEWORK STYLE-->
+      <div class="content2">
+        <div class="container-homework">
+            <h1 class="title">Assistance aux devoirs</h1>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nom_complet">Nom complet</label>
+                    <input type="text" id="nom_complet" name="nom_complet" placeholder="Ex: Jean Dupont" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">Numéro WhatsApp</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="Ex: +509 00 00 0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: exemple@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Ex: Mathématiques" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Expliquez votre demande ici" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="piece_jointe">Pièces jointes (jpg, jpeg, PNG, pdf, txt, doc, docx)</label>
+                    <input type="file" id="piece_jointe" name="piece_jointe[]" multiple accept=".jpg, .jpeg, .png, .pdf, .txt, .doc, .docx">
+                </div>
+                <input type="submit" value="Envoyer">
+            </form>
+            <p class="notice">Des frais peuvent s'appliquer pour ces services. Les frais peuvent varier selon la complexité du dossier. 
+                Les méthodes de paiement acceptées incluent Moncash, Natcash, MasterCard, Visa,  etc...</p>
+        </div>
+      </div>
+      <!-- ASSISTANCE FOR HOMEWORK STYLE END -->
+
+      
+          <!-- THE PART FOR THE FOOTER -->
+          <footer>
+            <div class="container">
+              <a href="condition.html">condition d'utilisation</a>
+              <p style="display: inline;">|</p>
+              <a href="politique.html">Politique de confidentialité</a>
+              <p>&copy; 2024 Kay Koyo</p>
+            </div>
+          </footer>
+        <!-- THE END OF THE FOOTER -->
+
+
+
+      </body>
+<script src="js/script.js"></script>
+</html>
